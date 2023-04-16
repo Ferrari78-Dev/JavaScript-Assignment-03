@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-03</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+</head>
+<body>
+     <header>
+      <h1>Movies App</h1>
+      <!-- <div class="search-form-container" >
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search for movies..."
+        />
+        <button id="searchBtn">Search</button>
+      </div> -->
+     </header>
+    <body>
+      <main>
+        <div class="Selection-container" style="width:100%;">
+        <label for="Genre">Genre:</label>
+        <select name="Genre" id="Genre" style="width:25%;" >
+          <option value="All">All</option>
+          <option value="Action">Action</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Science_Fiction">Science Fiction</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Family">Family</option>
+          <option value="Animation">Animation</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Crime">Crime</option>
+          <option value="Drama">Drama</option>  
+          <option value="Music">Music</option>
+        </select>
+
+        <label for="Year">Year:</label>
+        <select name="Year" id="Year"  style="width:25%;">
+          <option value="All">All</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+         
+        </select>
+
+        <label for="Language">Language:</label>
+        <select name="Language" id="Language"  style="width:25%;">
+          <option value="All">All</option>
+          <option value="English">English</option>
+          <option value="Bangali">French</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Bangali">Bengali</option>
+          <option value="Spanish">Japanees</option>
+        </select>
+      <br>
+      <br>
+        <label for="Rating">Rating:</label>
+        <select name="Rating" id="Rating"  style="width:85%;">
+          <option value="All">All</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <button id="filter-btn" >Filter</button>
+
+    </main>
+      <br>
+      <br>
+      <br>
+      <ul id="movie-list"></ul>
+      <div class="Result-container" style="width:100%;">
+        <section id="movieResults" >
+          <h2 class="search-results-heading">Search Results</h2>
+          <div class="list-container">
+            <table  id="movie-list" style="width:100%;">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Title</th>
+                  <th>Year</th>
+                </tr>
+              </thead>
+               <tbody id="movie-table-body">
+              </tbody>
+            </table>
+          
+          </div>
+        </section>
+        <!-- <section id="MovieDetails">
+          <h2>Recipe Details</h2>
+          <div id="MovieDetailsContainer"></div>
+        </section> -->
+      </div>
+      
+    </body>
+  </html>
+  
